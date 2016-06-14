@@ -28,13 +28,26 @@ ADVANCED TRACK: 14-20
 
 // 1. Create an object called "me" that describes you with your name, city, and job title.
 
+var me = {
+  name: "Scott",
+  city: "Boulder",
+  "job title": "Student"
+
+}
+
+
 // 2. To your "me" object, add a key of "family" with the value being an array of three of your family members.
 // Example of desired output: { name: 'Bob Smith',
 //                              city: 'Denver',
 //                              jobTitle: 'professional wrestler',
 //                              family: ['Joan', 'Kyle', 'Hank'] }
 
+me.family = ["Don", "Jean", "Ryan"];
+
 // 3. Using the "me" object, use dot notation and bracket notation to access the value of your city.
+console.log(me.city);
+console.log(me["city"]);
+
 
 // Use the following Object for questions 4-9:
 var invitees = { adults: [{
@@ -72,27 +85,39 @@ var invitees = { adults: [{
                       };
 
 // 4. Access Penny's dinner choice (this will be the second item in his dinnerChoice array)
-
+console.log(invitees.adults[0].dinnerChoice[1]);
 // 5. Access Pablo's table number.
-
+console.log(invitees.children[1].table);
 // 6. Access Lauren's seating specialConsideration.
-
+console.log(invitees.adults[2].specialConsiderations.seating);
 // 7. Access Billy's dessert choice (this will be the third item in his dinnerChoice array)
-
+console.log(invitees.adults[1].dinnerChoice[2]);
 // 8. Access Ada's allergies.
-
+console.log(invitees.children[2].allergies[0]);
 // 9. Create a string that reads Lauren's dinner choice in a sentence.
 // Desired result: "Lauren's appetizer is _______. She will be eating ______ for dinner
 // and has selected ________ as her dessert."
-
+// var laurensApp = invitees.adults[0].dinnerChoice[1];
+// var laurensDinner = invitees.adults[0].dinnerChoice[1];
+// var laurensDesert = invitees.adults[0].dinnerChoice[1];
+// var laurensOrder = "Lauren's appetizer is " + laurensApp "". She will be eating ______ for dinner
+// // and has selected ________ as her dessert."
+// console.log("Lauren's appetizer is " + invitees.adults[0].dinnerChoice[1]]. She will be eating ______ for dinner
+// and has selected ________ as her dessert.")
 // 10. Create an empty object called "jsWorkshop" using Constructor Notation.
+var jsWorkshop = new Object();
+
+console.log('jsWorkshop = ', jsWorkshop);
 
 // 11. To your "jsWorkshop" object, assign a key of "classmates" with the value being an array of five your classmates.
+jsWorkshop.classmates = ['Mark', 'Matt', 'Courtney', 'Maria', 'Scott'];
 
 // 12. Get the length of the fourth classmate's name.
 
-// 13. Clear the classmates value.
+console.log(jsWorkshop.classmates[3].length);
 
+// 13. Clear the classmates value.
+delete jsWorkshop.classmate;
 
 // ADVANCED TRACK
 // 14. Create an empty array called "books".

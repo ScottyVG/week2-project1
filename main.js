@@ -128,31 +128,45 @@ var books = [];
 //     (Feel free to make up the titles. And the authors. Have fun. No pressure.)
 //     Insert the three objects into the "books" array.
 
-// Final desired result:
-    // var books = [ISBN22222:  {
-    //                             title: "You Had Me at Woof",
-    //                             author: "Julie Klum",
-    //                             pages: 207
-    //                           },
-    //              ISBN33333:  {
-    //                             title: "The Catcher in the Rye",
-    //                             author: "JD Salinger",
-    //                             pages: 214
-    //                           },
-    //              ISBN44444:  {
-    //                             title: "Bangkok Haunts",
-    //                             author: "John Burdett",
-    //                             pages: 569,
-    //                           }
-    //             ]
+
+var books = [ISBN1452138915 = {
+  title: "You Need More Sleep: Advice from Cats",
+  author: "Francesco Marciuliano",
+  pages: 112
+},
+ISBN0062736302 = {
+  title: "Felinestein: Pampering the Genius in Your Cat",
+  author: "Cindy Ribarich & Suzanne Delzio",
+  pages: 176
+},
+ISBN1452110581 = {
+  title: "I Could Pee on This: And Other Poems by Cats",
+  author: "Francesco Marciuliano",
+  pages: 112,
+}
+];
 
 // 16. Access the author of the first book.
-
+var auth1 = books[0].author;
+console.log(auth1);
 // 17. Get the length of the author the the third book.
-
+var length3 = books[2].author.length;
+console.log(length3);
 // 18. To each book object variable, add a key of "dateRead" with a value of the year you read the book.
 //     (Go ahead and make this up, too. Get wild.)
 
+ISBN1452138915.dateRead = "2016";
+ISBN0062736302.dateRead = "2016";
+ISBN1452110581.dateRead = "2016";
+
+var dateRead1 = books[0].dateRead;
+console.log(dateRead1);
+
 // 19. Remove the second book from the books Array.
 
+books.splice(1, 1);
+console.log(books);
+
 // 20. Explain, in your own words, the difference between Literal Notation and Constructor Notation.
+// Literal would be used for an object that is static and would not be changed.
+// Constructor would be used for an object that is dynamic and would be changed.

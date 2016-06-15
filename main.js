@@ -121,6 +121,7 @@ delete jsWorkshop.classmate;
 
 // ADVANCED TRACK
 // 14. Create an empty array called "books".
+var books = [];
 
 // 15. Create three book objects that contain book titles, their author, and number of pages.
 //     The name of each object should be some kind of made up ISBN number.

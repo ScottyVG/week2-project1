@@ -97,13 +97,12 @@ console.log(invitees.children[2].allergies[0]);
 // 9. Create a string that reads Lauren's dinner choice in a sentence.
 // Desired result: "Lauren's appetizer is _______. She will be eating ______ for dinner
 // and has selected ________ as her dessert."
-// var laurensApp = invitees.adults[0].dinnerChoice[1];
-// var laurensDinner = invitees.adults[0].dinnerChoice[1];
-// var laurensDesert = invitees.adults[0].dinnerChoice[1];
-// var laurensOrder = "Lauren's appetizer is " + laurensApp "". She will be eating ______ for dinner
-// // and has selected ________ as her dessert."
-// console.log("Lauren's appetizer is " + invitees.adults[0].dinnerChoice[1]]. She will be eating ______ for dinner
-// and has selected ________ as her dessert.")
+var laurensApp = invitees.adults[0].dinnerChoice[0];
+var laurensDinner = invitees.adults[0].dinnerChoice[1];
+var laurensDesert = invitees.adults[0].dinnerChoice[2];
+var laurensOrder = "Lauren's appetizer is " + laurensApp + ". She will be eating " + laurensDinner + " for dinner and has selected " + laurensDesert + " as her dessert.";
+console.log(laurensOrder);
+
 // 10. Create an empty object called "jsWorkshop" using Constructor Notation.
 var jsWorkshop = new Object();
 
@@ -165,7 +164,6 @@ console.log(dateRead1);
 // 19. Remove the second book from the books Array.
 
 books.splice(1, 1);
-console.log(books);
 
 // 20. Explain, in your own words, the difference between Literal Notation and Constructor Notation.
 // Literal would be used for an object that is static and would not be changed.
